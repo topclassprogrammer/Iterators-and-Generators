@@ -13,11 +13,11 @@ def test_2():
         ['d', 'e', 'f', 'h', False],
         [1, 2, None]
     ]
-    for flat_iterator_item, check_item in zip(
+    for flat_generator_item, check_item in zip(
             flat_generator(list_of_lists_1),
             ['a', 'b', 'c', 'd', 'e', 'f', 'h', False, 1, 2, None]
     ):
-        assert flat_iterator_item == check_item
+        assert flat_generator_item == check_item
     assert list(flat_generator(list_of_lists_1)) == ['a', 'b', 'c', 'd', 'e',
                                                      'f', 'h', False, 1, 2,
                                                      None]
